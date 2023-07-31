@@ -1,5 +1,5 @@
-import { auth,app,db } from "./firbase.mjs"
-import { doc, setDoc ,updateDoc  } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+import { auth,app,db } from "./firebase.mjs"
+import { doc, setDoc , updateDoc  } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 
 
 const name= document.getElementById('name').value;
@@ -13,7 +13,7 @@ const address= document.getElementById('address').value;
 //     window.location.href='./update.html'
 
 // })
-const btn=document.getElementById("update")
+const btn=document.getElementById("update");
 
 btn.addEventListener('click',async()=>{
 
@@ -24,12 +24,11 @@ btn.addEventListener('click',async()=>{
     // Set the "capital" field of the city 'DC'
     await updateDoc(washingtonRef, {
         
-    name:name.value,
+        name:name.value,
         email:email.value,
         password:password.value,
         address:address.value,
         
 
 });
-alert("Your Account has been updated")
-})
+});

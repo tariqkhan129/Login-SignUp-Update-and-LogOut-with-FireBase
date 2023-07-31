@@ -1,4 +1,4 @@
-import { auth } from "./firbase.mjs"
+import { auth } from "./firebase.mjs"
 import { signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
 

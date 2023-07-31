@@ -1,4 +1,4 @@
-import { auth,app } from "./firbase.mjs"
+import { auth,app } from "./firebase.mjs"
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
 

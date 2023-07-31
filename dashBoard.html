@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashBoard</title>
+    <style>
+     
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+        .topnav {
+            display: flex;
+            background-color: gray;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #heading {
+            margin-left: 80px;
+        }
+
+        .signup-container {
+            margin-right: 100px;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>DashBoard</h1>
+ 
+  <div class="topnav">
+    <div id="heading">
+        <h2>DashBoard</h2>
+    </div>
+    <div class="container">
+      <button id="btn">LogOut</button>
+      <a href="./update.html">  <button id="btnUpdate">Update</button></a>
 
-    <button id="btn">Loug out</button>
-  <a href="./update.html">  <button id="btnUpdate">Update</button></a>
+    </div>
+</div>
 
 
     <script type="module" src="./signout.js"></script>
